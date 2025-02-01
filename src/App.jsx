@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from './components/Header';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -32,7 +32,7 @@ const App = () => {
               <CivitaiGenerator />
             </div>
           </div>
-          <ToastContainer theme={isDark ? 'dark' : 'light'} />
+          <ToastContainer position="bottom-right" />
         </div>
       </ErrorBoundary>
     </div>
